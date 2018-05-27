@@ -1,0 +1,34 @@
+{
+  "name": "image-display",
+  "version": "0.0.0",
+  "description": "A Kibana plugin that displays images found in record attributes",
+  "main": "index.js",
+  "kibana": {
+    "version": "5.6.9",
+    "templateVersion": "8.0.0"
+  },
+  "scripts": {
+    "test": "karma start"
+  },
+  "dependencies": {
+    "is-absolute-url": "^2.1.0",
+    "npm": "^6.1.0"
+  },
+  "devDependencies": {
+    "angular": "^1.7.0",
+    "angular-mocks": "^1.7.0",
+    "angular-ui-router": "^1.0.18",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.2",
+    "jasmine": "^3.1.0",
+    "jasmine-core": "^3.1.0",
+    "karma": "^2.0.2",
+    "karma-babel-preprocessor": "^7.0.0",
+    "karma-browserify": "^5.2.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.2"
+  }
+}

@@ -1,0 +1,37 @@
+.image-display, .image-display div {
+    width: 100%;
+}
+
+.image-display h3 {
+    text-align: center
+}
+
+.image-display img {
+    width: 100%;
+}
+
+.image-display button {
+    min-width: 100px;
+}
+
+.image-display-params label {
+    display: block;
+}
+
+.image-display .image-header {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.image-display .field-name {
+    width: 100%;
+    text-align: center;
+}
+
+.image-display .back-btn {
+    float: left;
+}
+
+.image-display .forward-btn {
+    float: right;
+}

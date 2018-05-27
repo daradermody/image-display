@@ -1,0 +1,11 @@
+<div class="image-display-params" ng-controller="imageDisplayParamsController">
+  <div class="form-group">
+    <label for="indexPattern">Index pattern</label>
+    <select class="form-control" ng-options="pattern as pattern.title for pattern in indexPatterns"
+            ng-model="vis.params.indexPattern" id="indexPattern"></select>
+  </div>
+  <div class="form-group">
+    <label for="documentId">Document ID</label>
+    <input class="form-control" type="text" ng-model="vis.params.documentId" id="documentId"/>
+  </div>
+</div>

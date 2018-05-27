@@ -1,0 +1,17 @@
+<div class="image-display container" ng-controller="imageDisplayController">
+  <h3 ng-if="vis.params.documentId">
+    {{data.length}} image<span ng-if="data.length !== 1">s</span> found for document {{ vis.params.documentId }}
+  </h3>
+  <span ng-if="errorMessage.length">{{ errorMessage }}</span>
+
+  <div ng-if="!errorMessage.length && data.length">
+    <div class="image-header">
+      <button class="btn back-btn col-xs-6 col-sm-1" ng-click="updateSlideNumber(-1)">Back</button>
+      <button class="btn forward-btn col-xs-6 col-sm-1" ng-click="updateSlideNumber(1)">Forward</button>
+      <p class="field-name text-monospace">{{ data[slideNumber].field }}</p>
+    </div>
+
+    <img ng-src="{{ data[slideNumber].url }}" alt="Image for {{ data[slideNumber].field }}"
+         onerror="this.src = '../plugins/image-display/assets/img/placeholder.svg'">
+  </div>
+</div>
