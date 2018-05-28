@@ -4,7 +4,7 @@
   </h3>
   <span ng-if="errorMessage.length">{{ errorMessage }}</span>
 
-  <div ng-if="!errorMessage.length && data.length">
+  <div class="image-display-content" ng-if="!errorMessage.length && data.length">
     <div class="image-header">
       <button class="btn back-btn col-xs-6 col-sm-1" ng-click="updateSlideNumber(-1)">Back</button>
       <button class="btn forward-btn col-xs-6 col-sm-1" ng-click="updateSlideNumber(1)">Forward</button>

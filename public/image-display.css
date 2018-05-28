@@ -1,3 +1,7 @@
+.image-display {
+    max-height: calc(100% - 101px);
+}
+
 .image-display, .image-display div {
     width: 100%;
 }
@@ -8,6 +12,8 @@
 
 .image-display img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .image-display button {
@@ -16,6 +22,10 @@
 
 .image-display-params label {
     display: block;
+}
+
+.image-display .image-display-content {
+    height: 100%;
 }
 
 .image-display .image-header {
